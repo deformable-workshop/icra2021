@@ -39,17 +39,18 @@
 							<h2>Workshop proposal ICRA2021: Representing and Manipulating Deformable Objects</h2>
 							
 							<p>
-							Deformable objects manipulation is a key component of a variety of everyday and specialized applications, ranging
-from domestic housework such as cloth folding or food handing, to medical scenarios such as surgery and suturing,
-up to industrial setups such as cable insertion. However, the large configuration space of deformable objects
-causes traditional modelling, planning and control approaches to fail when dealing with them. More specifically,
-unlike in the case of rigid objects, two main challenges arise: i) there is no clear and unified state representation
-and ii) their dynamics is complex and highly non-linear. This leads to the absence of current unified solutions and
-to highly domain-specific approaches in the fields of perception, simulation, control and mechanics. In addition,
-the lack of scalable simulation environments limits possible developments in the above fields. We believe that
-robust progress can only be achieved by combining these complementary areas of robotics. Therefore, this
-workshop aims to start a discussion about the current state of the art and possible research directions as well as
-connect people from different sub-fields to solve deformable objects challenges. 
+							Deformable objects manipulation is a key component of a variety of everyday and specialized
+applications, ranging from domestic housework such as cloth folding or food handing, to medical
+scenarios such as surgery and suturing, up to industrial setups such as cable insertion. However, the large
+configuration space of deformable objects causes traditional modelling, planning and control
+approaches to fail when dealing with them. More specifically, unlike in the case of rigid objects, two
+main challenges arise: i) there is no clear and unified state representation and ii) the dynamics is complex
+and highly non-linear. This leads to the absence of current unified solutions and to highly domain-specific
+approaches emerging in the fields of perception, simulation, control and mechanics. In addition, the lack
+of scalable simulation environments limits possible developments in the above fields. We believe that
+robust progress can only be achieved by combining these complementary areas of robotics. Therefore,
+this workshop aims to start a discussion about the current state-of-the-art and possible research
+directions as well as connect people from different sub-fields to solve deformable objects challenges. 
 							</p>
 							
 							<p> </p>
@@ -68,18 +69,16 @@ connect people from different sub-fields to solve deformable objects challenges.
 							<h3>Event description </h3>
 
 							<p> 
-								The workshop is tailored towards researchers interested at deformable object manipulation and closely related
-problems such as modeling, perception, and representation. This workshop would give the community a chance
-to: identify open research challenges, find new applications for techniques that already exist in closely related
-areas, foster new collaborations, and get a good overview of the state of the art from the invited talks. Speakers
-from the forefront of the research on deformable objects are invited to provide top-level insights. Furthermore,
-a review process from experienced researcher will be carried out giving young researchers the opportunity to
-receive valuable feedbacks.
-The scope of the workshop is intentionally broad, as many of the challenges, especially the question of
-representation and simulation are important for the majority of relevant research problems. We think the
-workshop would be of interest to researchers from the target field as currently the work on deformable objects
-is usually presented at different sessions of main robotics conferences, making the exchange of ideas and
-collaborations difficult. 
+								The workshop is tailored towards researchers interested at deformable object manipulation and closely
+related problems such as modeling, perception, representation and mechanics. This workshop would
+give the community a chance to: identify open research challenges, find new applications for techniques
+that already exist in closely related areas, foster new collaborations, and get a good overview of the state
+-of-the-art from the invited talks. Speakers from the forefront of the research on deformable objects are
+invited to provide top-level insights. Furthermore, a review process from experienced researchers will
+be carried out giving young researchers the opportunity to receive valuable feedbacks.
+The scope of the workshop is intentionally broad as we think that different aspects need to be taken into
+account to effectively handle deformable objects and we want to enclose them in a single event, filling
+the lack of a dedicated session in the main robotics conferences.  
 							</p>
 
 							
@@ -87,7 +86,44 @@ collaborations difficult.
 							<p> </p>	
 
 							<h3>Topic relevance </h3>
-							<p> TODO </p>
+							<p> Despite the presence of deformable objects in a wide range of domains and tasks, endowing robots with
+the ability to manipulate them is still an open problem. This is motivated by the extreme complexity of
+representation and dynamics modeling of such objects. Although different methodologies exist in the
+recent state-of-the-art, tackling different aspects of deformable objects, no unified and comprehensive
+solution exists yet that can be easily generalized to non-specific objects. 
+As possible approaches to state representation and modelling, topological coordinates and Finite
+Element Methods have been adopted for solving specific tasks. In contrast, data-driven approaches can
+be leveraged to circumvent explicit modelling at the cost of an expensive data collection. For this,
+although simulation environments would be most suited for collecting large amount of data, the current
+state-of-the-art does not enable it in an efficient and scalable manner. Moreover, even when a
+simulation setup is employed, the transfer of the acquired skills into real-world may be unsuccessful due
+to inaccurate simulation models of the involved dynamics. Alternatively, demonstrating specific
+interactions, and learning from them by imitation, can improve the efficiency of the system setup at the
+cost of its generality.
+In addition, further aspects need to be addressed to effectively manipulate deformable objects. Among
+those, employment and coordination of two or more arms can be necessary to properly manipulate
+highly deformable objects for both prehensile and non-prehensile manipulation. Finding efficient ways
+to combine planning and control is equally important in this regard. Finally, implementing the planned
+interaction can also be improved by specialized grippers or sensors, e.g., optical and haptic perception.</p>
+
+<p>
+
+Specifically, this workshop will focus on the following topics: </p>
+
+<ul>
+  <li>Representation and state estimation</li>
+  <li> Simulation and modeling </li>
+  <li>Transfer from simulation to reality</li>
+  <li>Data-driven methods: end-to-end learning, learning from demonstration, etc. </li>
+  <li>Perception: state tracking, parameter identification, property detection (e.g. landmarks for
+garments) and classification, etc. </li>
+  <li>Control, visual servoing and planning</li>
+  <li>Multi-arm manipulation</li>
+  <li>Specialized tools, e.g. grippers, and sensors</li>
+  <li>Application-specific challenges: cloth folding, surgical tasks, etc.</li>
+</ul>
+
+
 
 
 							
@@ -124,8 +160,28 @@ collaborations difficult.
 					<!-- org -->
 					<section id="org" class="wrapper style3 spotlights">
 						<div class="inner">
-							<h2>Organizers</h2>
-							<p> List of all organizers will be put here after acceptence </p>
+							<h2>Main Organizers</h2>
+							<ul>
+							  <li>Anastasiia Varava (primary contact), KTH Royal Institute of Technology </li>
+							  <li> Martina Lippi, University of Roma Tre</li>
+							  <li>Michael C. Welle, KTH Royal Institute of Technology</li>
+							  
+							</ul>
+
+							<h2>Co-Organizers</h2>
+							<ul>
+							  <li>Hang Yin, KTH Royal Institute of Technology</li>
+							  <li> Rika Antonova, KTH Royal Institute of Technology</li>
+							  <li> Florian T. Pokorny, KTH Royal Institute of Technology</li>
+							  <li>Danica Kragic, KTH Royal Institute of Technology</li>
+							  <li> Yiannis Karayiannidis, Chalmers University of Technology</li>
+							  <li> Ville Kyrki, Aalto University</li>
+							  <li> Alessandro Marino, University of Cassino and Southern Lazio</li>
+							  <li> Julia Borras, Institut de Robotica i Informatica Industrial</li>
+							  <li> Guillem Alenya, Institut de Robotica i Informatica Industrial</li>
+							  <li> Carme Torras, Institut de Robotica i Informatica Industrial</li>
+							  
+							</ul>
 							
 						
 
