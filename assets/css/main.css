@@ -3938,3 +3938,27 @@ input, select, textarea {
 .overview-video{
 	max-width:640px; 
 }
+
+@media screen and (max-width: 360px){
+	.to-red-mobile{
+		font-size:10pt; 	
+	}
+}
+
+.img-list{
+	width:256px; 
+}
+
+h3.name-list{
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.info-list{
+	font-size:90%; 
+}
+
+.talk-list {
+    margin-top: 5pt;
+}
