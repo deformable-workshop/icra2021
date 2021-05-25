@@ -4,6 +4,38 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 31, 2021 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
 <html>
 	<head>
 		<title>Workshop ICRA 2021</title>
@@ -48,13 +80,15 @@
 				<div class="inner">
 					<nav>
 						<ul>
+							<li><a href="#live">Live</a></li>
+							<li><a href="#schedule">Schedule</a></li>	
 							<li><a href="#intro">Abstract</a></li>
 							<li><a href="#content">Content</a></li>
 							<li><a href="#papers">Call for Papers</a></li>
-							<li><a href="#schedule">Schedule</a></li>	
+							
 							<li><a href="#talks">Invited speakers</a></li>
 							<li><a href="#org">Organizers</a></li>	
-							<li><a href="#collab">Links</a></li>														
+							<!--li><a href="#collab">Links</a></li-->														
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -63,6 +97,155 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+
+				<!-- Live -->
+					<section id="live" class="wrapper style3 fullscreen fade-up">
+						<div class="inner">
+							<h2>Workshop on Representing and Manipulating Deformable Objects @ <a href="https://www.ieee-icra.org/">ICRA2021</a> goes live in:</h2>
+							
+							<h1 id="demo"></h1>
+							
+							<p>Follow the livestream here.</p>
+							<p> You can also join the workshop webinar directly using this Zoom link: WILL APEAR SOON</p>
+							<p> Interact and vote on questions using this Slido link: WILL APEAR SOON</p>						
+							
+
+
+						</div>
+					</section>
+
+
+
+
+				<!-- Schedule -->
+					<section id="schedule" class="wrapper style2 spotlights">
+						<div class="inner">
+							<h2>Schedule</h2>
+							Time Zone: GMT+00
+							<table id="schedule_tab">
+						  <tr>
+						    <th>Time</th>
+						    <th>Activity</th>
+						  </tr>
+						  <tr>
+						    <td>09:00 - 09:15</td>
+						    <td>Opening</td>
+						  </tr>
+						  <tr>
+						    <td>09:15 - 09:45</td>
+						    <td> <b>David Navarro-Alarcon:</b> On Latent Space Representations for Controlling Shapes of Deformable Objects</td>
+						  </tr>
+						  <tr>
+						    <td>09:45 - 10:15</td>
+						    <td> <b>Xiang Li:</b> daptive Control for Robotic Manipulation of Deformable Linear Objects  
+									with Offline and Online Learning of Unknown Models</td>
+						  </tr>
+						  <tr>
+						    <td>10:15 - 11:00</td>
+						    <td>Spotlight talks #1:
+						    	<p> 
+						    	 Satoshi Funabashi - <a href="spotlight/spot_in_hand_manipulation.pdf" target="_blank">In-Hand Manipulation of Multi-Fingered Hand with Daily Objects Based on Graph Convolutional Network and 3-Axis Tactile Sensing</a> <br>
+						    	 Gionata Salvietti - <a href="spotlight/spot_the_mag_gripper.pdf" target="_blank">The Mag-Gripper: A Soft-Rigid Gripper Augmented with an Electromagnet to Precisely Handle Clothes</a> <br>
+						    	 Dongjun Lee - <a href="spotlight/spot_interactive_real_time.pdf" target="_blank">Interactive Real-Time Simulation of Robotic Snap Connection Process</a> <br>
+						    	 Bruno Maric - <a href="spotlight/spot_soft_robotics.pdf" target="_blank">Soft robotics approach to autonomous plastering</a> <br>
+						    	 Yufei Wang - <a href="spotlight/spot_learning_visible.pdf" target="_blank">Learning Visible Connectivity Dynamics for Cloth Smoothing</a> <br>
+						    	 Jeffery Zhou - <a href="spotlight/spot_a_latent_and_semantic.pdf" target="_blank">A Latent and Semantic Framework for Deformable Object Representation</a> <br>
+						    	 Zehang Weng - <a href="spotlight/spot_graph_based.pdf" target="_blank">Graph-based Task-specific Prediction Models for Interactions between Deformable and Rigid Objects</a>
+						    	</p>
+
+
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>11:00 - 11:15</td>
+						    <td>Coffee break </td>
+						  </tr>
+						  <tr>
+						    <td>11:15 – 11:45</td>
+						    <td> <b> Zackory M. Erickson:</b> Physics-based Cloth Simulation and Learning Towards Robotic Caregiving </td>
+						  </tr>
+						  <tr>
+						    <td>11:45 – 12:15</td>
+						    <td> <b>Bruno Siciliano:</b> Tracking and Control for Dexterous Manipulation of 3D Soft Objects  </td>
+						  </tr>
+						  <tr>
+						    <td>12:15 – 12:45</td>
+						    <td>Open discussion round</td>
+						  </tr>
+						  <tr>
+						    <td>12:45 - 14:00</td>
+						    <td>Lunch</td>
+						  </tr>
+						  <tr>
+						    <td>14:00 – 14:30</td>
+						    <td> <b> Dmitry Berenson: </b> Learning Where to Trust Unreliable Models for Deformable Object Manipulation</td>
+						  </tr>
+						  <tr>
+						  	<tr>
+						    <td>14:30 – 15:00</td>
+						    <td> <b> Wenzhen Yuan: </b> Estimating object hardness with high-resolution tactile sensing</td>
+						  </tr>
+						  <tr>
+						    <td>15:00 – 15:45</td>
+						    <td>Spotlight talks #2:
+						    	<p> Rita A Laezza - <a href="spotlight/spot_presenting_reform.pdf" target="_blank">Presenting ReForm, a Robot Learning Sandbox for Deformable Linear Object Manipulation</a> <br>
+						    	 Pedro Perrusi - <a href="spotlight/spot_learning_robotic.pdf" target="_blank">Learning robotic needle steering from inverse finite element simulations</a> <br>
+						    	 Xiao Ma - <a href="spotlight/spot_learning_latent_graph.pdf" target="_blank">Learning Latent Graph Dynamics for Deformable Object Manipulation</a> <br>
+						    	 Mehrdad Dorostian - <a href="spotlight/spot_deformable_objects_manipulation.pdf" target="_blank">Deformable Objects Manipulation Using Model Adaptation Techniques</a> <br>
+						    	 Alberta Longhini - <a href="spotlight/spot_perceiving_and_handling.pdf" target="_blank">Perceiving and handling textiles: a robotics perspective</a> <br>
+						    	 Benjamin Alt - <a href="spotlight/spot_localization_and_tracking.pdf" target="_blank">Localization and Tracking of User-Defined Points on Deformable Objects for Robotic Manipulation</a> </p>
+
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>15:45- 16:00</td>
+						    <td>Coffee break </td>
+						  </tr>
+						  <tr>
+						    <td>16:00 – 16:30</td>
+						    <td><b> Dinesh Manocha:</b> Learning based Methods for High-DOF Grasping </td>
+						  </tr>
+						  <tr>
+						  	<tr>
+						    <td>16:30 – 17:00</td>
+						    <td><b> Jeannette Bohg:</b> Bridging Topology and Geometry Using Reinforcement Learning </td>
+						  </tr>
+						  <tr>
+						    <td>17:00 – 17:45</td>
+						    <td>Open discussion round</td>
+						  </tr>
+						  <tr>
+						    <td>17:15 – 18:00</td>
+						    <td>Closing remarks</td>
+						  </tr>
+						</table>
+
+							
+						
+
+
+					</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
@@ -538,7 +721,7 @@ garments) and classification, etc. </li>
 
 
 					<!-- collaberations -->
-					<section id="collab" class="wrapper style4 fade-up">
+					<!--section id="collab" class="wrapper style4 fade-up">
 						<div class="inner">
 							<h2>Links</h2>
 							<ul>
@@ -547,7 +730,7 @@ garments) and classification, etc. </li>
 							</li>
 							</ul>
 						</div>
-					</section>
+					</section-->
 
 							
 
