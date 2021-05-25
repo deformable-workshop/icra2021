@@ -3159,9 +3159,9 @@ input, select, textarea {
 			border-right: 0;
 		}
 
-			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.05);
-			}
+			table tbody tr:nth-child(2n+1) {
+    background-color: rgb(132, 160, 202);
+}
 
 		table td {
 			padding: 0.75em 0.75em;
@@ -3961,4 +3961,12 @@ h3.name-list{
 
 .talk-list {
     margin-top: 5pt;
+}
+
+#demo {
+    text-align: center;
+    background-color: #e3e8f2;
+    padding: 20px;
+    color: #4966a8;
+    border-radius: 17px;
 }
